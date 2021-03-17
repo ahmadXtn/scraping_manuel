@@ -18,6 +18,6 @@ from https://mesmanuels.fr/
 Exucute index.php in cmd
 php index.php bookID pageWidth[optional] pageheight[optional]
 
-
+Mega Link: https://mega.nz/folder/gjw0AKoD#IiAlEnft0Sdxzyuo2HwUBA
 
 ```
