@@ -14,7 +14,7 @@ composer install
 
 ```php
 copy ebooks id ex: 9782401073524
-
+from https://mesmanuels.fr/
 Exucute index.php in cmd
 php index.php bookID pageWidth[optional] pageheight[optional]
 
