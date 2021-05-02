@@ -10,6 +10,11 @@ require_once 'lib_fn.php';
 
 use Knp\Snappy\Pdf;
 
+$bookId = $argv[1];
+$pWidth=$argv[2];
+$pHeigth=$argv[3];
+$baseUrl = "https://educadhoc.hachette-livre.fr/extract/complet/$bookId/show-page/";
+
 $options = [
     'enable-javascript' => true,
     'javascript-delay' => 2500,
@@ -17,14 +22,13 @@ $options = [
     'lowquality' => false,
     'enable-external-links' => true,
     'enable-internal-links' => true,
-    'page-height' => 550,
+    'page-height' => $pHeigth,
     'page-size' => "A4",
-    'page-width' => 400,
+    'page-width' => $pWidth,
 ];
 
 
-$bookId = $argv[1];
-$baseUrl = "https://educadhoc.hachette-livre.fr/extract/complet/$bookId/show-page/";
+
 
 createBookFolder($bookId);
 
